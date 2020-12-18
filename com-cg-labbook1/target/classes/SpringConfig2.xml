@@ -9,7 +9,7 @@
     
         
 <!-- Setter Injection Employee bean-->
-	<bean id="emp" class="com.cg.labbook1b.Employee2" autowire="byName">
+	<bean id="emp" class="com.cg.labbook1.ps2.Employee2" autowire="byName">
 		<property name="id">
 			<value>12345</value>
 		</property>
@@ -26,7 +26,7 @@
 	
 	
 	<!-- Setter Injection SBU bean-->
-	<bean id="sbu" class="com.cg.labbook1b.SBU">
+	<bean id="sbu" class="com.cg.labbook1.ps2.SBU">
 		<property name="sbuId">
 			<value>1</value>
 		</property>

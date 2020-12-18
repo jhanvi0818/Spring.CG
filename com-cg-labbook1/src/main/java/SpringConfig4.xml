@@ -7,7 +7,7 @@
     
    
     
-        <bean id="emp1" class="com.cg.labbook1d.Employee4"> 
+        <bean id="emp1" class="com.cg.labbook1.ps4.Employee4"> 
         <property name="id"> 
             <value>101</value> 
         </property> 
@@ -19,7 +19,7 @@
         </property> 
     </bean> 
   
-    <bean id="emp2" class="com.cg.labbook1d.Employee4"> 
+    <bean id="emp2" class="com.cg.labbook1.ps4.Employee4"> 
         <property name="id"> 
             <value>102</value> 
         </property> 
@@ -31,24 +31,24 @@
         </property> 
     </bean> 
   
-    <bean id="emp3" class="com.cg.labbook1d.Employee4"> 
+    <bean id="emp3" class="com.cg.labbook1.ps4.Employee4"> 
     <constructor-arg value="103" type="int"></constructor-arg> 
     <constructor-arg value="Monu" type="java.lang.String"></constructor-arg> 
     <constructor-arg value="16000" type="double"></constructor-arg> 
     </bean> 
   
-    <bean id="emp4" class="com.cg.labbook1d.Employee4"> 
+    <bean id="emp4" class="com.cg.labbook1.ps4.Employee4"> 
     <constructor-arg value="104" type="int"></constructor-arg> 
     <constructor-arg value="Ramesh" type="java.lang.String"></constructor-arg> 
     <constructor-arg value="10000" type="double"></constructor-arg> 
     </bean> 
     
-    <bean id="emp5" class="com.cg.labbook1d.Employee4"> 
+    <bean id="emp5" class="com.cg.labbook1.ps4.Employee4"> 
     <constructor-arg value="105" type="int"></constructor-arg> 
     <constructor-arg value="Swara" type="java.lang.String"></constructor-arg> 
     <constructor-arg value="35000" type="double"></constructor-arg> 
     </bean> 
-  <bean id="dao" class="com.cg.labbook1d.EmployeeDao">
+  <bean id="dao" class="com.cg.labbook1.ps4.EmployeeDao">
         <constructor-arg name="employeeList">
         <list>
          <ref bean="emp1"></ref>
@@ -60,7 +60,7 @@
         </constructor-arg>
     </bean>
     
-    <bean id="service" class="com.cg.labbook1d.EmployeeService">
+    <bean id="service" class="com.cg.labbook1.ps4.EmployeeService">
     <constructor-arg>
      <ref bean ="dao"/>
     </constructor-arg>
