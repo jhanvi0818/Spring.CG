@@ -1,0 +1,31 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+<bean id="emp1" class="com.cg.labbook1c.Employee3">
+    	 <constructor-arg name="id" value="123" type ="int"></constructor-arg>
+        <constructor-arg name="name" value="Harriet" type ="java.lang.String"></constructor-arg>
+        <constructor-arg name="salary" value="45000.0" type ="double"></constructor-arg>
+        
+    </bean> 
+      <bean id="emp2" class="com.cg.labbook1c.Employee3">
+    	 <constructor-arg name="id" value="124" type ="int"></constructor-arg>
+        <constructor-arg name="name" value="Sakshi" type ="java.lang.String"></constructor-arg>
+        <constructor-arg name="salary" value="20000.0" type ="double"></constructor-arg>
+       
+    </bean> 
+ 
+    <bean id="sbu" class="com.cg.labbook1c.SBU3">
+        <constructor-arg name="sbuId" value="100" type ="int"></constructor-arg>
+        <constructor-arg name="sbuHead" value="Kiran Rao" type ="java.lang.String"></constructor-arg>
+        <constructor-arg name="sbuName" value="Product Engineering services" type ="java.lang.String"></constructor-arg>
+        <constructor-arg name="employeeList">
+        <list>
+        <ref bean="emp1"></ref>
+        <ref bean="emp2"></ref>
+         </list>
+        </constructor-arg>
+    </bean>
+   
+  </beans>
+

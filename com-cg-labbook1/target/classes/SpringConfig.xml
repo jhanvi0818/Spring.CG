@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+ http://www.springframework.org/schema/beans/spring-beans-4.0.xsd"> 
+    
+   
+    
+        <bean id="emp1" class="com.cg.labbook1.Employee"> 
+        <property name="id"> 
+            <value>101</value> 
+        </property> 
+        <property name="name"> 
+            <value>Sakshi</value> 
+        </property> 
+        <property name="salary"> 
+            <value>2000</value> 
+        </property> 
+        <property name ="bu">
+        	<value>PESBU</value>
+        </property>
+        <property name ="age">
+        	<value>21</value>
+        </property>
+    </bean> 
+  
+   
+  
+    <bean id="emp3" class="com.cg.labbook1.Employee"> 
+    <constructor-arg value="103" type="int"></constructor-arg> 
+    <constructor-arg value="Monu" type="java.lang.String"></constructor-arg> 
+    <constructor-arg value="10.6" type="double"></constructor-arg> 
+    <constructor-arg value="BU2" type="java.lang.String"></constructor-arg> 
+	<constructor-arg value="23" type="int"></constructor-arg>
+    </bean> 
+  
+    
+  
+  
+</beans> 
